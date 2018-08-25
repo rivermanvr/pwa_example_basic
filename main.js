@@ -5,9 +5,8 @@
 
 if (navigator.serviceWorker) {
   // the method exists so register the serviceWorker
-  navigator.serviceWorker.register('/sw.js')
+  navigator.serviceWorker.register('/SW_Examples/sw_asyncSetup.js')
     .then(function(registration) {
       console.log('main.js -> SW -- registered');
-    })
-    .catch(console.log);
+    }).catch(console.log);
 }
