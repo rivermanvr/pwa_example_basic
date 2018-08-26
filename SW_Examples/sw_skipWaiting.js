@@ -3,5 +3,5 @@ self.addEventListener('install', (e) => {
   });
 
 self.addEventListener('activate', (e) => {
-  console.log('sw.js -> skip Waiting to this SW Activate event');
+  console.log('SW -> skip Waiting to this SW Activate event');
 });

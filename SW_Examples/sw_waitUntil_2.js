@@ -1,11 +1,9 @@
-console.log('sw.js -> SW registered');
+// Service Worker
 
-// There are tasks that you can do here and 
-// this.serviceWorker can be referenced by using "self"
-// so let's add an eventlistener:
+console.log('sw.js -> SW registered_2');
 
 self.addEventListener('install', (e) => {
-  console.log('sw.js -> Install event');
+  console.log('SW: Install event_2');
   let installPromise = new Promise(resolve => {
     //you would do async setup here, like setting up a cache for the page
     //simulating waiting for something by using a setTimeout:
@@ -18,7 +16,7 @@ self.addEventListener('install', (e) => {
 });
 
 self.addEventListener('activate', (e) => {
-  console.log('sw.js -> Activate event');
+  console.log('SW: New SW Activate event_2');
   let activatePromise = new Promise(resolve => {
     //you would do activate tasks as well
     //simulating waiting for something by using a setTimeout:
