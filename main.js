@@ -6,17 +6,18 @@
 
   if (navigator.serviceWorker) {
   // the method exists, register the serviceWorker
-  navigator.serviceWorker.register('fetchEv_offlineCameraFeed.js')
+  navigator.serviceWorker.register('sw.js')
     .then(function(registration) {
       console.log('main.js -> SW -- registered');
     }).catch(console.log);
 }
 
-// get camera feed
-fetch(`./camera_feed.html`)
-	.then(res => {
-		return res.text();
-  })
-  .then(html => {
-    document.getElementById("camera").innerHTML = html;
-  });
+// get camera feed ......a later example
+
+// fetch(`./camera_feed.html`)
+// 	.then(res => {
+// 		return res.text();
+//   })
+//   .then(html => {
+//     document.getElementById("camera").innerHTML = html;
+//   });
